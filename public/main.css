@@ -353,7 +353,7 @@ h1.title {
     border-bottom: none; }
     .home-page .content-container p {
       font-weight: 600;
-      padding: 15px 0; }
+      padding: 10px 0; }
       .home-page .content-container p:last-child {
         padding-bottom: 50px; }
     @media screen and (min-width: 800px) {

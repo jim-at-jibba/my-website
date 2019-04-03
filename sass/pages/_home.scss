@@ -1,0 +1,20 @@
+/*************************************************************************************
+* Home Page styles
+*************************************************************************************/
+.home-page {
+  background-image: url("../assets/home-bg-mob.webp");
+  background-position: -100px 0;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+
+  @media screen and (min-width: 768px) {
+    background-image: url("../assets/home-bg-normal.webp");
+    background-size: auto;
+  }
+
+  @media screen and (min-width: 1921px) {
+    background-image: url("../assets/home-bg.webp");
+  }
+}

@@ -17,4 +17,47 @@
   @media screen and (min-width: 1921px) {
     background-image: url("../assets/home-bg.webp");
   }
+
+  .body-wrapper {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 80px);
+
+    .container {
+      max-width: 1080px;
+      align-self: flex-end;
+    }
+  }
+
+  .tag-line-wrapper {
+    margin-bottom: 30px;
+
+    h1 {
+      font-family: "Space Mono";
+      font-size: 4rem;
+    }
+
+    @media screen and (min-width: 800px) {
+      margin-bottom: 120px;
+    }
+  }
+  .content-container {
+    padding: 30px 60px;
+    background: rgba($color-primary, 0.7);
+    border: 1px solid $color-dark;
+    border-bottom: none;
+
+    p {
+      font-weight: 600;
+      padding: 15px 0;
+
+      &:last-child {
+        padding-bottom: 50px;
+      }
+    }
+
+    @media screen and (min-width: 800px) {
+      padding: 40px 100px;
+    }
+  }
 }

@@ -7,4 +7,19 @@
   height: 80px;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  width: 100vw;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  p {
+    color: $color-dark;
+    font-weight: 500;
+    margin-right: 10px;
+  }
 }

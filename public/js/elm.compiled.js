@@ -4873,7 +4873,9 @@ var author$project$Components$Header$viewHeader = A2(
 				]))
 		]));
 var elm$html$Html$footer = _VirtualDom_node('footer');
+var elm$html$Html$h1 = _VirtualDom_node('h1');
 var elm$html$Html$img = _VirtualDom_node('img');
+var elm$html$Html$p = _VirtualDom_node('p');
 var elm$html$Html$Attributes$src = function (url) {
 	return A2(
 		elm$html$Html$Attributes$stringProperty,
@@ -4909,7 +4911,81 @@ var author$project$Main$view = function (model) {
 					[
 						elm$html$Html$Attributes$class('body-wrapper')
 					]),
-				_List_Nil),
+				_List_fromArray(
+					[
+						A2(
+						elm$html$Html$div,
+						_List_fromArray(
+							[
+								elm$html$Html$Attributes$class('container')
+							]),
+						_List_fromArray(
+							[
+								A2(
+								elm$html$Html$div,
+								_List_fromArray(
+									[
+										elm$html$Html$Attributes$class('tag-line-wrapper')
+									]),
+								_List_fromArray(
+									[
+										A2(
+										elm$html$Html$h1,
+										_List_Nil,
+										_List_fromArray(
+											[
+												elm$html$Html$text('Hello, I\'m James. I\'m a software engineer from Bristol, UK.')
+											]))
+									])),
+								A2(
+								elm$html$Html$div,
+								_List_fromArray(
+									[
+										elm$html$Html$Attributes$class('content-container')
+									]),
+								_List_fromArray(
+									[
+										A2(
+										elm$html$Html$h1,
+										_List_fromArray(
+											[
+												elm$html$Html$Attributes$class('title')
+											]),
+										_List_fromArray(
+											[
+												elm$html$Html$text('About')
+											])),
+										A2(
+										elm$html$Html$p,
+										_List_Nil,
+										_List_fromArray(
+											[
+												elm$html$Html$text('I’m a software engineer working primarily in JavaScript and Typescript. I am a full stack engineer at Gravitywell in Bristol.  ')
+											])),
+										A2(
+										elm$html$Html$p,
+										_List_Nil,
+										_List_fromArray(
+											[
+												elm$html$Html$text('I create performant, highly scalable web based applications. I also create enterprise level mobile applications with experience in React Native as well as the native platforms. ')
+											])),
+										A2(
+										elm$html$Html$p,
+										_List_Nil,
+										_List_fromArray(
+											[
+												elm$html$Html$text('Writer for the Salted Bytes and Gravitywell medium publications and co-host of Salted Bytes podcast.')
+											])),
+										A2(
+										elm$html$Html$p,
+										_List_Nil,
+										_List_fromArray(
+											[
+												elm$html$Html$text('Mentor at Coding Coach.')
+											]))
+									]))
+							]))
+					])),
 				A2(
 				elm$html$Html$div,
 				_List_fromArray(
@@ -4928,10 +5004,7 @@ var author$project$Main$view = function (model) {
 							[
 								A2(
 								elm$html$Html$footer,
-								_List_fromArray(
-									[
-										elm$html$Html$Attributes$class('container')
-									]),
+								_List_Nil,
 								_List_fromArray(
 									[
 										A2(
@@ -4943,13 +5016,32 @@ var author$project$Main$view = function (model) {
 										_List_fromArray(
 											[
 												A2(
-												elm$html$Html$img,
+												elm$html$Html$div,
+												_List_Nil,
 												_List_fromArray(
 													[
-														elm$html$Html$Attributes$src('/assets/Elm_logo.svg.png'),
-														elm$html$Html$Attributes$width(50)
-													]),
-												_List_Nil)
+														A2(
+														elm$html$Html$p,
+														_List_Nil,
+														_List_fromArray(
+															[
+																elm$html$Html$text('Lovingly built with')
+															]))
+													])),
+												A2(
+												elm$html$Html$div,
+												_List_Nil,
+												_List_fromArray(
+													[
+														A2(
+														elm$html$Html$img,
+														_List_fromArray(
+															[
+																elm$html$Html$Attributes$src('/assets/Elm_logo.svg.png'),
+																elm$html$Html$Attributes$width(30)
+															]),
+														_List_Nil)
+													]))
 											]))
 									]))
 							]))

@@ -3,10 +3,26 @@
 *************************************************************************************/
 body {
   font-size: 10px;
+  color: $color-dark;
+}
+
+p {
+  font-family: Roboto;
+  font-size: 1.6rem;
+  color: $color-dark;
 }
 
 h1 {
   font-family: "Space Mono", monospace;
+  color: $color-dark;
+}
+
+h1.title {
+  font-family: "Space Mono", monospace;
+  color: $color-dark;
+  border-bottom: 5px solid $color-secondary;
+  font-size: 24px;
+  display: inline-block;
 }
 
 .container {

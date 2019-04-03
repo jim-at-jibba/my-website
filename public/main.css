@@ -233,6 +233,32 @@ input[type='submit'] {
       padding: 0 1.0rem; } }
 
 /*************************************************************************************
+* Global styles
+*************************************************************************************/
+body {
+  font-size: 10px;
+  color: #333333; }
+
+p {
+  font-family: Roboto;
+  font-size: 1.6rem;
+  color: #333333; }
+
+h1 {
+  font-family: "Space Mono", monospace;
+  color: #333333; }
+
+h1.title {
+  font-family: "Space Mono", monospace;
+  color: #333333;
+  border-bottom: 5px solid #ff286c;
+  font-size: 24px;
+  display: inline-block; }
+
+.container {
+  max-width: 1680px; }
+
+/*************************************************************************************
 * Import all component partials here
 *************************************************************************************/
 /*************************************************************************************
@@ -270,7 +296,20 @@ input[type='submit'] {
   bottom: 0;
   height: 80px;
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  width: 100vw; }
+
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: center; }
+  .footer-logo p {
+    color: #333333;
+    font-weight: 500;
+    margin-right: 10px; }
 
 /*************************************************************************************
 * Import all page partials here
@@ -292,3 +331,31 @@ input[type='submit'] {
   @media screen and (min-width: 1921px) {
     .home-page {
       background-image: url("../assets/home-bg.webp"); } }
+  .home-page .body-wrapper {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 80px); }
+    .home-page .body-wrapper .container {
+      max-width: 1080px;
+      align-self: flex-end; }
+  .home-page .tag-line-wrapper {
+    margin-bottom: 30px; }
+    .home-page .tag-line-wrapper h1 {
+      font-family: "Space Mono";
+      font-size: 4rem; }
+    @media screen and (min-width: 800px) {
+      .home-page .tag-line-wrapper {
+        margin-bottom: 120px; } }
+  .home-page .content-container {
+    padding: 30px 60px;
+    background: rgba(69, 249, 229, 0.7);
+    border: 1px solid #333333;
+    border-bottom: none; }
+    .home-page .content-container p {
+      font-weight: 600;
+      padding: 15px 0; }
+      .home-page .content-container p:last-child {
+        padding-bottom: 50px; }
+    @media screen and (min-width: 800px) {
+      .home-page .content-container {
+        padding: 40px 100px; } }

@@ -1,6 +1,7 @@
 module Main exposing (main)
 
 import Browser
+import Components.Footer as ViewFooter
 import Components.Header as ViewHeader
 import Html exposing (..)
 import Html.Attributes exposing (class, height, src, width)
@@ -46,15 +47,7 @@ view model =
                 ]
             ]
         , div [ class "footer-wrapper" ]
-            [ div [ class "footer" ]
-                [ footer []
-                    [ div [ class "footer-logo" ]
-                        [ div [] [ p [] [ text "Lovingly built with" ] ]
-                        , div [] [ img [ src "/assets/Elm_logo.svg.png", width 30 ] [] ]
-                        ]
-                    ]
-                ]
-            ]
+            [ ViewFooter.viewFooter ]
         ]
 
 

@@ -4809,7 +4809,9 @@ var elm$virtual_dom$VirtualDom$toHandlerInt = function (handler) {
 	}
 };
 var elm$html$Html$div = _VirtualDom_node('div');
-var elm$html$Html$span = _VirtualDom_node('span');
+var elm$html$Html$footer = _VirtualDom_node('footer');
+var elm$html$Html$img = _VirtualDom_node('img');
+var elm$html$Html$p = _VirtualDom_node('p');
 var elm$virtual_dom$VirtualDom$text = _VirtualDom_text;
 var elm$html$Html$text = elm$virtual_dom$VirtualDom$text;
 var elm$json$Json$Encode$string = _Json_wrap;
@@ -4821,6 +4823,70 @@ var elm$html$Html$Attributes$stringProperty = F2(
 			elm$json$Json$Encode$string(string));
 	});
 var elm$html$Html$Attributes$class = elm$html$Html$Attributes$stringProperty('className');
+var elm$html$Html$Attributes$src = function (url) {
+	return A2(
+		elm$html$Html$Attributes$stringProperty,
+		'src',
+		_VirtualDom_noJavaScriptOrHtmlUri(url));
+};
+var elm$html$Html$Attributes$width = function (n) {
+	return A2(
+		_VirtualDom_attribute,
+		'width',
+		elm$core$String$fromInt(n));
+};
+var author$project$Components$Footer$viewFooter = A2(
+	elm$html$Html$div,
+	_List_fromArray(
+		[
+			elm$html$Html$Attributes$class('footer')
+		]),
+	_List_fromArray(
+		[
+			A2(
+			elm$html$Html$footer,
+			_List_Nil,
+			_List_fromArray(
+				[
+					A2(
+					elm$html$Html$div,
+					_List_fromArray(
+						[
+							elm$html$Html$Attributes$class('footer-logo')
+						]),
+					_List_fromArray(
+						[
+							A2(
+							elm$html$Html$div,
+							_List_Nil,
+							_List_fromArray(
+								[
+									A2(
+									elm$html$Html$p,
+									_List_Nil,
+									_List_fromArray(
+										[
+											elm$html$Html$text('Lovingly built with')
+										]))
+								])),
+							A2(
+							elm$html$Html$div,
+							_List_Nil,
+							_List_fromArray(
+								[
+									A2(
+									elm$html$Html$img,
+									_List_fromArray(
+										[
+											elm$html$Html$Attributes$src('/assets/Elm_logo.svg.png'),
+											elm$html$Html$Attributes$width(30)
+										]),
+									_List_Nil)
+								]))
+						]))
+				]))
+		]));
+var elm$html$Html$span = _VirtualDom_node('span');
 var author$project$Components$Header$viewHeader = A2(
 	elm$html$Html$div,
 	_List_fromArray(
@@ -4872,22 +4938,7 @@ var author$project$Components$Header$viewHeader = A2(
 					_List_Nil)
 				]))
 		]));
-var elm$html$Html$footer = _VirtualDom_node('footer');
 var elm$html$Html$h1 = _VirtualDom_node('h1');
-var elm$html$Html$img = _VirtualDom_node('img');
-var elm$html$Html$p = _VirtualDom_node('p');
-var elm$html$Html$Attributes$src = function (url) {
-	return A2(
-		elm$html$Html$Attributes$stringProperty,
-		'src',
-		_VirtualDom_noJavaScriptOrHtmlUri(url));
-};
-var elm$html$Html$Attributes$width = function (n) {
-	return A2(
-		_VirtualDom_attribute,
-		'width',
-		elm$core$String$fromInt(n));
-};
 var author$project$Main$view = function (model) {
 	return A2(
 		elm$html$Html$div,
@@ -4993,59 +5044,7 @@ var author$project$Main$view = function (model) {
 						elm$html$Html$Attributes$class('footer-wrapper')
 					]),
 				_List_fromArray(
-					[
-						A2(
-						elm$html$Html$div,
-						_List_fromArray(
-							[
-								elm$html$Html$Attributes$class('footer')
-							]),
-						_List_fromArray(
-							[
-								A2(
-								elm$html$Html$footer,
-								_List_Nil,
-								_List_fromArray(
-									[
-										A2(
-										elm$html$Html$div,
-										_List_fromArray(
-											[
-												elm$html$Html$Attributes$class('footer-logo')
-											]),
-										_List_fromArray(
-											[
-												A2(
-												elm$html$Html$div,
-												_List_Nil,
-												_List_fromArray(
-													[
-														A2(
-														elm$html$Html$p,
-														_List_Nil,
-														_List_fromArray(
-															[
-																elm$html$Html$text('Lovingly built with')
-															]))
-													])),
-												A2(
-												elm$html$Html$div,
-												_List_Nil,
-												_List_fromArray(
-													[
-														A2(
-														elm$html$Html$img,
-														_List_fromArray(
-															[
-																elm$html$Html$Attributes$src('/assets/Elm_logo.svg.png'),
-																elm$html$Html$Attributes$width(30)
-															]),
-														_List_Nil)
-													]))
-											]))
-									]))
-							]))
-					]))
+					[author$project$Components$Footer$viewFooter]))
 			]));
 };
 var elm$core$Platform$Cmd$batch = _Platform_batch;

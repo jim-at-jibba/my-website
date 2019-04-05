@@ -6,8 +6,15 @@
   width: 100vw;
   padding-top: 25px;
 
+  .header {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .header-left {
-    position: absolute;
+    //  xosition: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,6 +36,18 @@
       color: $color-dark;
       font-weight: bold;
       font-family: "Space Mono", monospace;
+    }
+  }
+
+  .header-right {
+    display: flex;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 200px;
+      list-style: none;
     }
   }
 }

@@ -32,7 +32,7 @@ view model =
     div [ class "home-page" ]
         [ div [ class "home-page-header-wrapper" ]
             [ ViewHeader.viewHeader ]
-        , div [ class "body-wrapper test" ]
+        , div [ class "body-wrapper" ]
             [ div [ class "container" ]
                 [ div [ class "tag-line-wrapper" ]
                     [ h1

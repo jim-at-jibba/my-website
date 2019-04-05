@@ -250,7 +250,7 @@ h1 {
 
 h1.title {
   font-family: "Space Mono", monospace;
-  color: #333333;
+  color: red;
   border-bottom: 5px solid #ff286c;
   font-size: 24px;
   display: inline-block; }
@@ -310,6 +310,10 @@ h1.title {
   height: 8rem;
   width: 100vw;
   padding-top: 25px; }
+  .header-wrapper .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
   .header-wrapper .header-left {
     position: absolute;
     display: flex;

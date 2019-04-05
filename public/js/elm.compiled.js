@@ -4886,7 +4886,17 @@ var author$project$Components$Footer$viewFooter = A2(
 						]))
 				]))
 		]));
+var elm$html$Html$a = _VirtualDom_node('a');
+var elm$html$Html$li = _VirtualDom_node('li');
 var elm$html$Html$span = _VirtualDom_node('span');
+var elm$html$Html$ul = _VirtualDom_node('ul');
+var elm$html$Html$Attributes$href = function (url) {
+	return A2(
+		elm$html$Html$Attributes$stringProperty,
+		'href',
+		_VirtualDom_noJavaScriptUri(url));
+};
+var elm$html$Html$Attributes$target = elm$html$Html$Attributes$stringProperty('target');
 var author$project$Components$Header$viewHeader = A2(
 	elm$html$Html$div,
 	_List_fromArray(
@@ -4899,7 +4909,7 @@ var author$project$Components$Header$viewHeader = A2(
 			elm$html$Html$div,
 			_List_fromArray(
 				[
-					elm$html$Html$Attributes$class('container')
+					elm$html$Html$Attributes$class('container header')
 				]),
 			_List_fromArray(
 				[
@@ -4935,7 +4945,96 @@ var author$project$Components$Header$viewHeader = A2(
 						[
 							elm$html$Html$Attributes$class('header-right')
 						]),
-					_List_Nil)
+					_List_fromArray(
+						[
+							A2(
+							elm$html$Html$ul,
+							_List_Nil,
+							_List_fromArray(
+								[
+									A2(
+									elm$html$Html$li,
+									_List_fromArray(
+										[
+											elm$html$Html$Attributes$class('header-icon github')
+										]),
+									_List_fromArray(
+										[
+											A2(
+											elm$html$Html$a,
+											_List_fromArray(
+												[
+													elm$html$Html$Attributes$href('https://github.com/jim-at-jibba'),
+													elm$html$Html$Attributes$target('_blank')
+												]),
+											_List_fromArray(
+												[
+													A2(
+													elm$html$Html$img,
+													_List_fromArray(
+														[
+															elm$html$Html$Attributes$src('/assets/icons/github.svg'),
+															elm$html$Html$Attributes$width(35)
+														]),
+													_List_Nil)
+												]))
+										])),
+									A2(
+									elm$html$Html$li,
+									_List_fromArray(
+										[
+											elm$html$Html$Attributes$class('header-icon github')
+										]),
+									_List_fromArray(
+										[
+											A2(
+											elm$html$Html$a,
+											_List_fromArray(
+												[
+													elm$html$Html$Attributes$href('https://twitter.com/jimgbest'),
+													elm$html$Html$Attributes$target('_blank')
+												]),
+											_List_fromArray(
+												[
+													A2(
+													elm$html$Html$img,
+													_List_fromArray(
+														[
+															elm$html$Html$Attributes$src('/assets/icons/twitter.svg'),
+															elm$html$Html$Attributes$width(35)
+														]),
+													_List_Nil)
+												]))
+										])),
+									A2(
+									elm$html$Html$li,
+									_List_fromArray(
+										[
+											elm$html$Html$Attributes$class('header-icon github')
+										]),
+									_List_fromArray(
+										[
+											A2(
+											elm$html$Html$a,
+											_List_fromArray(
+												[
+													elm$html$Html$Attributes$href('https://www.linkedin.com/in/james-best-5195a1152/'),
+													elm$html$Html$Attributes$target('_blank')
+												]),
+											_List_fromArray(
+												[
+													A2(
+													elm$html$Html$img,
+													_List_fromArray(
+														[
+															elm$html$Html$Attributes$src('/assets/icons/linkedin.svg'),
+															elm$html$Html$Attributes$width(35)
+														]),
+													_List_Nil)
+												]))
+										]))
+								]))
+						]))
 				]))
 		]));
 var elm$html$Html$h1 = _VirtualDom_node('h1');
@@ -4960,7 +5059,7 @@ var author$project$Main$view = function (model) {
 				elm$html$Html$div,
 				_List_fromArray(
 					[
-						elm$html$Html$Attributes$class('body-wrapper test')
+						elm$html$Html$Attributes$class('body-wrapper')
 					]),
 				_List_fromArray(
 					[

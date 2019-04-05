@@ -32,10 +32,13 @@ view model =
     div [ class "home-page" ]
         [ div [ class "home-page-header-wrapper" ]
             [ ViewHeader.viewHeader ]
-        , div [ class "body-wrapper" ]
+        , div [ class "body-wrapper test" ]
             [ div [ class "container" ]
                 [ div [ class "tag-line-wrapper" ]
-                    [ h1 [] [ text "Hello, I'm James. I'm a software engineer from Bristol, UK." ] ]
+                    [ h1
+                        []
+                        [ text "Hello, I'm James. I'm a software engineer from Bristol, UK." ]
+                    ]
                 , div
                     [ class "content-container" ]
                     [ h1 [ class "title" ] [ text "About" ]

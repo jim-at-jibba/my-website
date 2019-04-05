@@ -4960,7 +4960,7 @@ var author$project$Main$view = function (model) {
 				elm$html$Html$div,
 				_List_fromArray(
 					[
-						elm$html$Html$Attributes$class('body-wrapper')
+						elm$html$Html$Attributes$class('body-wrapper test')
 					]),
 				_List_fromArray(
 					[

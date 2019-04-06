@@ -4,6 +4,8 @@
     "watch:elm": "chokidar './src/**/*.elm' -c 'elm make ./src/Main.elm --output ./public/js/elm.compiled.js' --initial",
     "build-css": "node-sass-chokidar sass/ -o public/",
     "watch-css": "npm run build-css && node-sass-chokidar sass/ -o public/css --watch --recursive",
+    "build-elm": "elm make ./src/Main.elm --output ./public/js/elm.compiled.js --optimize",
+    "build": "npm-run-all -p build-css build-elm ",
     "dev-server": "browser-sync start --server 'public' --files 'public/**/*.*'"
   },
   "dependencies": {},

@@ -250,7 +250,7 @@ h1 {
 
 h1.title {
   font-family: "Space Mono", monospace;
-  color: red;
+  color: #333333;
   border-bottom: 5px solid #ff286c;
   font-size: 24px;
   display: inline-block; }
@@ -311,11 +311,11 @@ h1.title {
   width: 100vw;
   padding-top: 25px; }
   .header-wrapper .header {
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
   .header-wrapper .header-left {
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -333,6 +333,14 @@ h1.title {
       color: #333333;
       font-weight: bold;
       font-family: "Space Mono", monospace; }
+  .header-wrapper .header-right {
+    display: flex; }
+    .header-wrapper .header-right ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 200px;
+      list-style: none; }
 
 /*************************************************************************************
 * Footer styles

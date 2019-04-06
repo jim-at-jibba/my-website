@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "justjibba-20190406180442-authRole",
+            "UnauthRoleArn": "arn:aws:iam::892323868332:role/justjibba-20190406180442-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::892323868332:role/justjibba-20190406180442-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "justjibba-20190406180442-deployment",
+            "UnauthRoleName": "justjibba-20190406180442-unauthRole",
+            "StackName": "justjibba-20190406180442",
+            "StackId": "arn:aws:cloudformation:eu-west-1:892323868332:stack/justjibba-20190406180442/132d5890-588e-11e9-b1ef-02a08d23d630"
+        }
+    }
+}

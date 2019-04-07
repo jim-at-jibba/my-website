@@ -10,5 +10,17 @@
             "StackName": "justjibba-20190406180442",
             "StackId": "arn:aws:cloudformation:eu-west-1:892323868332:stack/justjibba-20190406180442/132d5890-588e-11e9-b1ef-02a08d23d630"
         }
+    },
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "justjibba-20190406183307-authRole",
+            "UnauthRoleArn": "arn:aws:iam::892323868332:role/justjibba-20190406183307-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::892323868332:role/justjibba-20190406183307-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "justjibba-20190406183307-deployment",
+            "UnauthRoleName": "justjibba-20190406183307-unauthRole",
+            "StackName": "justjibba-20190406183307",
+            "StackId": "arn:aws:cloudformation:eu-west-1:892323868332:stack/justjibba-20190406183307/0ac2d140-5892-11e9-9829-02925b9a5d4e"
+        }
     }
 }

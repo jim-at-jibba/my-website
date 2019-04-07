@@ -4808,6 +4808,7 @@ var elm$virtual_dom$VirtualDom$toHandlerInt = function (handler) {
 			return 3;
 	}
 };
+var elm$html$Html$a = _VirtualDom_node('a');
 var elm$html$Html$div = _VirtualDom_node('div');
 var elm$html$Html$footer = _VirtualDom_node('footer');
 var elm$html$Html$img = _VirtualDom_node('img');
@@ -4823,12 +4824,19 @@ var elm$html$Html$Attributes$stringProperty = F2(
 			elm$json$Json$Encode$string(string));
 	});
 var elm$html$Html$Attributes$class = elm$html$Html$Attributes$stringProperty('className');
+var elm$html$Html$Attributes$href = function (url) {
+	return A2(
+		elm$html$Html$Attributes$stringProperty,
+		'href',
+		_VirtualDom_noJavaScriptUri(url));
+};
 var elm$html$Html$Attributes$src = function (url) {
 	return A2(
 		elm$html$Html$Attributes$stringProperty,
 		'src',
 		_VirtualDom_noJavaScriptOrHtmlUri(url));
 };
+var elm$html$Html$Attributes$target = elm$html$Html$Attributes$stringProperty('target');
 var elm$html$Html$Attributes$width = function (n) {
 	return A2(
 		_VirtualDom_attribute,
@@ -4866,7 +4874,7 @@ var author$project$Components$Footer$viewFooter = A2(
 									_List_Nil,
 									_List_fromArray(
 										[
-											elm$html$Html$text('Lovingly built with')
+											elm$html$Html$text('Proudly built with')
 										]))
 								])),
 							A2(
@@ -4875,28 +4883,30 @@ var author$project$Components$Footer$viewFooter = A2(
 							_List_fromArray(
 								[
 									A2(
-									elm$html$Html$img,
+									elm$html$Html$a,
 									_List_fromArray(
 										[
-											elm$html$Html$Attributes$src('/assets/Elm_logo.svg.png'),
-											elm$html$Html$Attributes$width(30)
+											elm$html$Html$Attributes$href('https://elm-lang.org/'),
+											elm$html$Html$Attributes$target('_blank')
 										]),
-									_List_Nil)
+									_List_fromArray(
+										[
+											A2(
+											elm$html$Html$img,
+											_List_fromArray(
+												[
+													elm$html$Html$Attributes$src('/assets/Elm_logo.svg.png'),
+													elm$html$Html$Attributes$width(30)
+												]),
+											_List_Nil)
+										]))
 								]))
 						]))
 				]))
 		]));
-var elm$html$Html$a = _VirtualDom_node('a');
 var elm$html$Html$li = _VirtualDom_node('li');
 var elm$html$Html$span = _VirtualDom_node('span');
 var elm$html$Html$ul = _VirtualDom_node('ul');
-var elm$html$Html$Attributes$href = function (url) {
-	return A2(
-		elm$html$Html$Attributes$stringProperty,
-		'href',
-		_VirtualDom_noJavaScriptUri(url));
-};
-var elm$html$Html$Attributes$target = elm$html$Html$Attributes$stringProperty('target');
 var author$project$Components$Header$viewHeader = A2(
 	elm$html$Html$div,
 	_List_fromArray(
